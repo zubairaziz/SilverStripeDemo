@@ -15,7 +15,7 @@
         <ul class="orbit-container">
             <li class="is-active orbit-slide">
                 <figure class="orbit-figure">
-                    <img class="orbit-image" src="https://placehold.it/1200x600/888?text=Slide-1" alt="Space">
+                    <img class="orbit-image" src="https://placehold.it/1200x600/666?text=Slide-1" alt="Space">
                     <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
                 </figure>
             </li>
@@ -69,6 +69,11 @@
                 <% if $Subtitle %>
                 <h2 class="subheader">$Subtitle</h2>
                 <% end_if %>
+                <% with $Photo.ScaleWidth(600) %>
+                <figure>
+                    <img src="$URL" alt="" width="$Width" height="$Height" />
+                </figure>
+                <% end_with %>
                 $Content
             </article>
         </div>
