@@ -4,9 +4,14 @@ namespace {
 
     use Page;
     use SilverStripe\Forms\TextField;
+    use SilverStripe\Assets\Image;
 
     class HomePage extends Page
     {
+        private static $has_one = [
+            'Image' => Image::class,
+        ];
+        
         private static $db = [
             'Subtitle' => 'Text',
         ];
