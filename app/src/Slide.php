@@ -17,6 +17,10 @@ class Slide extends DataObject
         'Image' => Image::class
     ];
 
+    private static $owns = [
+        'Image'
+    ];
+
     private static $summary_fields = [
         'Caption' => 'Caption'
     ];

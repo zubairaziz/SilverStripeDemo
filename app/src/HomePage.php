@@ -16,7 +16,7 @@ namespace {
     {
 
         private static $has_many = [
-            'Slides' => 'Slide'
+            'Slides' => Slide::class
         ];
 
         private static $has_one = [
@@ -47,6 +47,11 @@ namespace {
             ); 
             $fields->addFieldToTab('Root.Slides', $slidesField);
             return $fields;
+        }
+
+        public function SlideImages() 
+        { 
+            return Slide::get();
         }
     }
 }

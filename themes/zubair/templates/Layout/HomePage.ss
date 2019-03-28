@@ -13,30 +13,16 @@
         </div>
 
         <ul class="orbit-container">
+            <% loop $Slides %>
             <li class="is-active orbit-slide">
                 <figure class="orbit-figure">
-                    <img class="orbit-image" src="https://placehold.it/1200x600/666?text=Slide-1" alt="Space">
-                    <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+                    <%-- <% with Image %> --%>
+                    <img class="orbit-image" src="$Image.AbsoluteUrl" alt="$Caption">
+                    <%-- <% end_with %> --%>
+                    <figcaption class="orbit-caption">$Caption</figcaption>
                 </figure>
             </li>
-            <li class="orbit-slide">
-                <figure class="orbit-figure">
-                    <img class="orbit-image" src="https://placehold.it/1200x600/777?text=Slide-2" alt="Space">
-                    <figcaption class="orbit-caption">Lets Rocket!</figcaption>
-                </figure>
-            </li>
-            <li class="orbit-slide">
-                <figure class="orbit-figure">
-                    <img class="orbit-image" src="https://placehold.it/1200x600/666?text=Slide-3" alt="Space">
-                    <figcaption class="orbit-caption">Encapsulating</figcaption>
-                </figure>
-            </li>
-            <li class="orbit-slide">
-                <figure class="orbit-figure">
-                    <img class="orbit-image" src="https://placehold.it/1200x600/555&text=Slide-4" alt="Space">
-                    <figcaption class="orbit-caption">Outta This World</figcaption>
-                </figure>
-            </li>
+            <% end_loop %>
         </ul>
     </div>
 
@@ -54,9 +40,9 @@
             <span class="show-for-sr">Third slide</span>
         </button>
 
-        <button data-slide="3">
+        <%-- <button data-slide="3">
             <span class="show-for-sr">Fourth slide</span>
-        </button>
+        </button> --%>
     </nav>
 
 </div>
