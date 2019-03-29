@@ -3,3 +3,5 @@
 /vendor/
 /resources/
 /public/resources/
+/node_modules/
+/node_modules/**/*

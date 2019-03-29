@@ -1,5 +1,8 @@
 <div class="top-bar" id="mainNavigation">
     <div class="top-bar-left">
+        <a href="{$baseUrl}">$SiteConfig.Title</a>
+    </div>
+    <div class="top-bar-right">
         <ul class="menu">
             <% loop Menu(1) %>
 			<li class="<% if $LinkingMode == "current" || $LinkingMode == "section" %>active<% end_if %><% if $Children %> has-dropdown<% end_if %>">
@@ -33,16 +36,4 @@
 			<% end_loop %>
         </ul>
     </div>
-    <%-- <div class="top-bar-right">
-        <ul class="dropdown menu" data-dropdown-menu>
-            <a href="admin/myprofile">Hi $CurrentMember.FirstName</a>
-            <% if $CurrentMember %>
-            <li><a href="admin/">Admin</a></li>
-            <li><a href="admin/myprofile">My Profile</a></li>
-            <li><a href="Security/logout">Logout</a></li>
-			<% else %>
-			<li><a href="Security/login?BackURL=%2Fadmin" data-reveal-id="login-form-modal">Login</a></li>
-			<% end_if %>
-        </ul>
-    </div> --%>
 </div>
