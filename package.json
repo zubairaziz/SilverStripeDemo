@@ -1,0 +1,26 @@
+{
+  "name": "SilverStripe",
+  "version": "1.0.0",
+  "description": "by Zubair Aziz",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "nodesass": "0.0.2-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w themes/zubair/scss/ -o themes/zubair/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zubairaziz/SilverStripeDemo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zubairaziz/SilverStripeDemo/issues"
+  },
+  "homepage": "https://github.com/zubairaziz/SilverStripeDemo#readme"
+}

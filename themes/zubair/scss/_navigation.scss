@@ -1,0 +1,65 @@
+.top-bar {
+    background: $blue;
+    color: $purple;
+
+    ul.menu {
+        background: $blue;
+
+        .li {
+            background: $blue;
+            border-bottom: 3px solid transparent;
+            a {
+                background: $blue;
+            }
+        }
+        .active {
+            border-bottom: 3px solid $purple;
+
+            a {
+                color: $purple;
+                background: $blue;
+            }
+        }
+    }
+}
+
+.footer {
+    margin-top: 3rem;
+    margin-bottom: 0;
+    padding: 2rem;
+    background: $blue;
+
+    ul.breadcrumbs {
+        border-left: 2px solid $purple;
+        li {
+            a {
+                color: $purple;
+            }
+            &::after {
+                color: $purple;
+            }
+            &:nth-child(1) {
+                padding-left: 4px;
+            }
+        }
+    }
+
+    ul.social-icons {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        li {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+            @include easeOut;
+
+            &:hover {
+                transform: translateY(-15px) scale(2) rotate(10deg);
+                z-index: 1;
+            }
+        }
+    }
+}

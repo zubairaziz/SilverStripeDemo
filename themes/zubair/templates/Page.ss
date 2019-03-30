@@ -26,12 +26,14 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
-    <link rel="stylesheet" href="$ThemeDir/css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+    <link rel="stylesheet" href="$ThemeDir/css/app.css" />
 </head>
 
 <body class="$ClassName.ATT">
 
-    <% include Header %>
+    <% include Navbar %>
 	
     <div class="main">
 		$Layout
@@ -46,11 +48,6 @@
         <% include Footer %>
     </footer>
 
-    <script>
-        $(document).ready(function() {
-            $(document).foundation();
-        });
-    </script>
-    <script src="$ThemeDir/javascript/main.js"></script>
+    <script src="$ThemeDir/javascript/app.js"></script>
 </body>
 </html>

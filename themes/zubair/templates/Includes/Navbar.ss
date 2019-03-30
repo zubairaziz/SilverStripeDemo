@@ -1,5 +1,5 @@
 <div class="top-bar" id="mainNavigation">
-    <div class="top-bar-left">
+    <div class="top-bar-left show-for-medium">
         <a href="{$baseUrl}">$SiteConfig.Title</a>
     </div>
     <div class="top-bar-right">
@@ -32,7 +32,7 @@
 				</ul>
 				<% end_if %>
 			</li>
-			<% if not $Last %><li class="divider"></li><% end_if %>
+			<%-- <% if not $Last %><li class="divider"></li><% end_if %> --%>
 			<% end_loop %>
         </ul>
     </div>

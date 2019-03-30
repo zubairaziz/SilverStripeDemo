@@ -1,0 +1,122 @@
+@import 'config';
+@import 'navigation';
+
+$btn-color: darken($blue, 20);
+
+body {
+    background: lighten($pink, 12);
+}
+
+a {
+    color: $purple;
+    @include easeOut;
+
+    &:hover {
+        color: darken($pink, 15);
+    }
+}
+
+.home-img {
+    figure {
+        padding: 0.2rem;
+        background: $purple;
+        border: 4px solid $purple;
+        color: set-text-color($purple);
+
+        figcaption {
+            font-size: 1.1em;
+            padding-top: 8px;
+        }
+    }
+}
+
+.main {
+    min-height: 65vh;
+}
+
+hr {
+    color: lighten($purple, 10);
+    border-color: inherit;
+}
+
+.button {
+    background-color: $btn-color;
+    color: $white;
+    @include easeOut;
+
+    &:hover {
+        background-color: $purple;
+        color: darken($pink, 15);
+    }
+}
+
+// Orbit Slider
+.clean-hero-slider {
+    margin-bottom: 3rem;
+
+    .orbit-caption {
+        width: auto;
+        height: auto;
+        background: $black;
+        position: absolute;
+        text-align: center;
+        right: 0;
+        left: 0;
+        padding: 0.2rem 2rem;
+
+        h3 {
+            color: $blue;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 0.9rem;
+            line-height: 1.25;
+        }
+    }
+
+    .orbit-slide {
+        padding-bottom: 40%;
+        background: $black;
+    }
+
+    .orbit-controls {
+        button {
+            background: $blue;
+            padding: 1rem 0.5rem;
+
+            &:hover {
+                background: $purple;
+                color: $pink;
+            }
+        }
+    }
+
+    .orbit-bullets {
+        display: none;
+
+        button {
+            width: 3rem;
+            height: 0.4rem;
+            border-radius: 0;
+            background-color: #fefefe;
+
+            &.is-active {
+                background-color: $blue;
+            }
+        }
+    }
+
+    ul.orbit-container {
+        height: auto !important;
+    }
+
+    li.orbit-slide {
+        max-height: none !important;
+    }
+}
+// End Orbit Slider
+
+@import 'mobile';
