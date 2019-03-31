@@ -8,10 +8,10 @@ To install, run:
 
 ## Sample Images
 
-![alt text](/sample_images/1.png 'Header and ')
-![alt text](/sample_images/2.png 'Form')
-![alt text](/sample_images/3.png 'Cards')
-![alt text](/sample_images/4.png 'Footer and icon hover')
+![alt text](/sample_images/1.png =300x 'Header and ')
+![alt text](/sample_images/2.png =300x 'Form')
+![alt text](/sample_images/3.png =300x 'Cards')
+![alt text](/sample_images/4.png =300x 'Footer and icon hover')
 
 ## Notes
 
