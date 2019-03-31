@@ -46,3 +46,5 @@ To install, run:
 -   I don't know what `phpcs.xml.dist` is exactly for. I left it in the repo, the only changes I made is to add `node_modules` to list of excludes.
 
 -   I decided not to include webpack and babel in this project as I know I'm not using a lot of JavaScript and don't want to spend the time messing with webpack configs.
+
+-   I also exported and included my database for this project. I don't know how necessary that is.
