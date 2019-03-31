@@ -25,6 +25,8 @@ To install, run:
 
 ### Frontend
 
+-   Created my own them (zubair) to replace 'simple'.
+
 -   I decided to use Foundation as it was mentioned during the interview, and I've never used this framework before. Perfect time to try it out.
 
 -   Hero slider is based on one of the guides on Zurb Foundation's website (clean hero slider). Orbit slider is really easy to work with, some minor annoying issues with page resizes.
@@ -48,3 +50,5 @@ To install, run:
 -   I decided not to include webpack and babel in this project as I know I'm not using a lot of JavaScript and don't want to spend the time messing with webpack configs.
 
 -   I also exported and included my database for this project. I don't know how necessary that is.
+
+-   There are some things where I wasn't sure about what to do in terms of best practices. Such as where to include CSS and Javascript files, etc...
