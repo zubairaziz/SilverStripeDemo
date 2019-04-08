@@ -17,7 +17,8 @@
                     <% end_with %>
                     <figcaption class="orbit-caption">
                         <h3>$Caption</h3> 
-                        <div>lorem ipsum dolor sit amet.    &nbsp;<a href="#" class="button">Mattis Elit</a></div>
+                        <div>lorem ipsum dolor sit amet.</div>
+                        <a href="#" class="button">Mattis Elit</a>
                     </figcaption>
                 </figure>
             </li>
