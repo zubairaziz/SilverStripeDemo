@@ -22,6 +22,7 @@ class Slide extends DataObject
     ];
 
     private static $summary_fields = [
+        'Image.StripThumbnail',
         'Caption' => 'Caption'
     ];
 
@@ -36,6 +37,7 @@ class Slide extends DataObject
         $fields->addFieldToTab('Root.Main', $photo = UploadField::create('Image'));
         $photo->setFolderName('slider/photos');
         $fields->removeByName('SortOrder');
+        $fields->removeByName('HomePage');
 
         return $fields;
     }

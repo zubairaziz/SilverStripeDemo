@@ -10,7 +10,8 @@
             </article>
         </div>
         <div class="text-center cell medium-5 large-4 home-img">
-            <% end_if %> <% with $Photo.ScaleWidth(350) %>
+            <% end_if %> 
+            <% with $Photo.ScaleWidth(350) %>
             <figure>
                 <img src="$URL" alt="" width="$Width" height="$Height" />
                 <figcaption class="text-center">Image uploaded through CMS</figcaption>

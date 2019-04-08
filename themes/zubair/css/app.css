@@ -111,10 +111,8 @@ hr {
       background-color: #fefefe; }
       .clean-hero-slider .orbit-bullets button.is-active {
         background-color: #6abedb; }
-  .clean-hero-slider ul.orbit-container {
-    height: auto !important; }
-  .clean-hero-slider li.orbit-slide {
-    max-height: none !important; }
+  .clean-hero-slider li.orbit-figure {
+    max-height: 300 !important; }
 
 @media print, screen and (min-width: 40em) {
   .clean-hero-slider .orbit-caption {
@@ -149,15 +147,6 @@ hr {
 @media print, screen and (min-width: 40em) {
   .clean-hero-slider .orbit-slide {
     padding-bottom: 0; } }
-
-@media print, screen and (min-width: 40em) {
-  .clean-hero-slider .orbit-controls .orbit-previous {
-    left: auto;
-    right: 2.4rem; } }
-
-@media print, screen and (min-width: 40em) {
-  .clean-hero-slider .orbit-controls .orbit-next {
-    right: 0.5rem; } }
 
 @media print, screen and (min-width: 40em) {
   .clean-hero-slider .orbit-bullets {

@@ -4,7 +4,11 @@ by Zubair Aziz
 
 To install, run:
 
-`composer install` then `npm install`.
+`composer install`
+
+To run sass, run:
+
+`npm install`, then `npm run sass`
 
 ## Sample Images
 
@@ -13,7 +17,7 @@ To install, run:
 <img src="./sample_images/3.png" width="300" alt="Cards" />
 <img src="./sample_images/4.png" width="300" alt="Footer and icon hover" />
 
-## Notes
+<!-- ## Notes
 
 ### Backend
 
@@ -51,4 +55,4 @@ To install, run:
 
 -   I also exported and included my database for this project. I don't know how necessary that is.
 
--   There are some things where I wasn't sure about what to do in terms of best practices. Such as where to include CSS and Javascript files, etc...
+-   There are some things where I wasn't sure about what to do in terms of best practices. Such as where to include CSS and Javascript files, etc... -->

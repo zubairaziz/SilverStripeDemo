@@ -12,11 +12,12 @@
             <% loop $Slides %>
             <li class="orbit-slide">
                 <figure class="orbit-figure">
-                    <img class="orbit-image" src="$Image.AbsoluteUrl" alt="$Caption" />
+                    <% with $Image.CropHeight(300) %>
+                    <img class="orbit-image" src="$Url" alt="$Caption" />
+                    <% end_with %>
                     <figcaption class="orbit-caption">
-                        <h3>$Caption</h3>
-                        <p>lorem ipsum dolor sit amet.</p>
-                        <a href="#" class="button yellow">Mattis Elit</a>
+                        <h3>$Caption</h3> 
+                        <div>lorem ipsum dolor sit amet.    &nbsp;<a href="#" class="button">Mattis Elit</a></div>
                     </figcaption>
                 </figure>
             </li>
