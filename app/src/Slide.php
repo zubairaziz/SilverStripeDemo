@@ -37,7 +37,7 @@ class Slide extends DataObject
         $fields->addFieldToTab('Root.Main', $photo = UploadField::create('Image'));
         $photo->setFolderName('slider/photos');
         $fields->removeByName('SortOrder');
-        $fields->removeByName('HomePage');
+        $fields->removeByName('HomePageID');
 
         return $fields;
     }

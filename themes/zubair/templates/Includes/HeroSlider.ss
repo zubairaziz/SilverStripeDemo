@@ -15,11 +15,17 @@
                     <% with $Image.CropHeight(300) %>
                     <img class="orbit-image" src="$Url" alt="$Caption" />
                     <% end_with %>
-                    <figcaption class="orbit-caption">
-                        <h3>$Caption</h3> 
-                        <div>lorem ipsum dolor sit amet.</div>
-                        <a href="#" class="button">Mattis Elit</a>
-                    </figcaption>
+                    <div class="grid-container">
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell">
+                                <figcaption class="orbit-caption">
+                                    <h3>$Caption</h3> 
+                                    <div>lorem ipsum dolor sit amet.</div>
+                                    <a href="#" class="button">Mattis Elit</a>
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
                 </figure>
             </li>
             <% end_loop %>

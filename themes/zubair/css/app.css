@@ -77,8 +77,6 @@ hr {
 .clean-hero-slider {
   margin-bottom: 3rem; }
   .clean-hero-slider .orbit-caption {
-    width: auto;
-    height: auto;
     background: #201f1d;
     position: absolute;
     text-align: center;
@@ -117,15 +115,12 @@ hr {
 @media print, screen and (min-width: 40em) {
   .clean-hero-slider .orbit-caption {
     position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.6);
+    top: 40%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.4);
     text-align: left;
-    width: 70%;
-    right: 0;
-    padding: 1rem 2rem; } }
+    max-width: 1200px;
+    margin: 0 auto; } }
 
 @media screen and (min-width: 75em) {
   .clean-hero-slider .orbit-caption {

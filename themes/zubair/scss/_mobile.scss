@@ -1,15 +1,15 @@
 @media print, screen and (min-width: 40em) {
     .clean-hero-slider .orbit-caption {
         position: absolute;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.6);
+        // right: 0;
+        top: 40%;
+        height: 50%;
+        // width: 40%;
+        background: rgba(0, 0, 0, 0.4);
         text-align: left;
-        width: 70%;
-        right: 0;
-        padding: 1rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        // padding: 1rem 2rem;
     }
 }
 
@@ -43,19 +43,6 @@
         padding-bottom: 0;
     }
 }
-
-// @media print, screen and (min-width: 40em) {
-//     .clean-hero-slider .orbit-controls .orbit-previous {
-//         left: 0.5rem;
-//         right: 2.4rem;
-//     }
-// }
-
-// @media print, screen and (min-width: 40em) {
-//     .clean-hero-slider .orbit-controls .orbit-next {
-//         right: 0.5rem;
-//     }
-// }
 
 @media print, screen and (min-width: 40em) {
     .clean-hero-slider .orbit-bullets {
